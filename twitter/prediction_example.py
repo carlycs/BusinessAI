@@ -23,3 +23,14 @@ trainfile = open('train.csv')
 header = trainfile.next().rstrip().split(',')
 
 
+###########################
+# BASELINE SOLUTION USING SCIKIT-LEARN
+#
+# using scikit-learn LogisticRegression module without fitting intercept
+# Postprocessing data instead of using the raw features we transform them logarithmically
+# the input to the classifier will be the difference between transformed features of A and B
+# the method roughly follows this procedure, except that we already start with pairwise data
+###########################
+
+def preprocess_features(x):
+    return np.log(1+x)
