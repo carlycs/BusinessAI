@@ -34,3 +34,16 @@ header = trainfile.next().rstrip().split(',')
 
 def preprocess_features(x):
     return np.log(1+x)
+
+
+###########################
+# PREPARING AND LOADING IN TEST DATA
+###########################
+
+testfile = open('test.csv')
+#ignore the test header
+testfile.next()
+###########################
+# WRITING OUTPUT FILE 
+###########################
+predfile = open('predictions.csv','w+')
