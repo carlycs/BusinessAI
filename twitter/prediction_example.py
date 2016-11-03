@@ -5,3 +5,8 @@
 # 
 # written by Hoofar Pourzand 
 # Used part of the code from Ferenc Huszár at PeerIndex
+
+from sklearn import linear_model
+from sklearn.metrics import auc_score
+
+import numpy as np
