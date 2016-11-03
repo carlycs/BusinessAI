@@ -5,3 +5,12 @@ import seaborn as sns
 
 # Draw inline
 %matplotlib inline 
+
+#==================
+#Data Exploration
+#==================
+
+# Load the data into DataFrames
+train_users = pd.read_csv('./data/train_users.csv')
+test_users = pd.read_csv('./data/test_users.csv')
+
